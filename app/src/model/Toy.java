@@ -1,4 +1,4 @@
-//class toy 
+package model;
 
 public class Toy {
 	private String id;
@@ -11,11 +11,16 @@ public class Toy {
 		this.probability = probability;
 	}
 
+	public Toy(String name, Byte probability) {
+        this.name = name;
+        this.probability = probability;
+	}
+	
 	public String getId() {
 		return this.id;
 	}
 
-	public void setId(id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -23,8 +28,8 @@ public class Toy {
 		return this.name;
 	}
 
-	public void setName(name) {
-		return this.name = name;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Byte getProbability() {
